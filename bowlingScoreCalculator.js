@@ -37,5 +37,4 @@ const bestScore = games => {
     return Math.max(...scoresOfGames)
 }
 
-module.exports = calculateScore;
-module.exports = bestScore;
+module.exports = {bestScore, calculateScore}

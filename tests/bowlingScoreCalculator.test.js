@@ -1,5 +1,5 @@
-const bestScore = require("../bowlingScoreCalculator");
-const calculateScore = require("../bowlingScoreCalculator");
+const { bestScore, calculateScore } = require("../bowlingScoreCalculator")
+
 
 const calculateScoreCases = [
     [[3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6], 90],
@@ -14,6 +14,7 @@ const bestScoreCases = [
         [6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     ], 90]
 ]
+
 
 describe('Calculating score of one bowling game', () => {
     test.each(calculateScoreCases)('for the input %s the score should be %d',(rolls, expectedScore) => {

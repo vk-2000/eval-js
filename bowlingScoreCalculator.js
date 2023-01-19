@@ -32,3 +32,5 @@ const calculateScore = rolls => {
 }
 
 console.log(calculateScore([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10]));
+
+module.exports = calculateScore;

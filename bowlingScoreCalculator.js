@@ -31,6 +31,12 @@ const calculateScore = rolls => {
     return score;
 }
 
-console.log(calculateScore([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10]));
+
+const bestScore = games => {
+    let scoresOfGames = games.map(rolls => calculateScore(rolls));
+    return Math.max(...scoresOfGames)
+}
+
 
 module.exports = calculateScore;
+module.exports = bestScore;

@@ -31,6 +31,7 @@ const calculateScore = rolls => {
     return score;
 }
 
+console.log(calculateScore([10, 4, 10]));
 
 const bestScore = games => {
     let scoresOfGames = games.map(rolls => calculateScore(rolls));
